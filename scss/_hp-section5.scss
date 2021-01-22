@@ -1,0 +1,244 @@
+.section5 {
+    position: relative;
+    min-height: 799px;
+    margin-top: 45px;
+    overflow: hidden;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 68px;
+        width: 990px;
+        margin: 0 auto;
+        z-index: 1;
+        @media only screen and (max-width: $lg) {
+            left: 0;
+            max-width: 890px;
+        }
+        @media only screen and (max-width: $md) {
+            flex-direction: column-reverse;
+            width: auto;
+        }
+        &__contact-form {
+            width: 325px;
+            margin-left: 15px;
+            background-color: rgba($white, 0.5);
+            min-height: 453px;
+            @media only screen and (max-width: $md) {
+                margin: 50px auto 260px;
+            }
+            @media only screen and (max-width: $sm) {
+                width: 305px;
+                margin: 50px auto 180px;
+            }
+            &__head {
+                letter-spacing: 0.4em;
+                text-transform: uppercase;
+                font-family: 'ff-good-headline-web-pro-ext';
+                color: $grey-dark;
+                font-weight: 600;
+                font-size: 24px;
+                margin: 44px 42px 15px 54px;
+                @media only screen and (max-width: $sm) {
+                    margin: 40px 40px 10px 40px;
+                    letter-spacing: 0.3em;
+                    text-align: center;
+                }
+            }
+            &__input {
+                width: calc(100% - 82px);
+                margin: 10px 41px 20px;
+                border: 0;
+                border-bottom: 1px solid $grey-light;
+                background: transparent;
+                color: $grey-font;
+                font-size: 12px;
+                line-height: 30px;
+                text-align: center;
+                @media only screen and (max-width: $sm) {
+                    width: calc(100% - 60px);
+                    margin: 10px 30px 20px;
+                }
+                &:focus {
+                    outline: 0;
+                }
+                &.text {
+                    line-height: 18px;
+                    height: 98px;
+                    margin-bottom: 18px;
+                    resize: none;
+                }
+            }
+            &__btn {
+                display: block;
+                text-transform: uppercase;
+                font-family: 'ff-good-headline-web-pro-ext';
+                color: $white;
+                font-weight: 600;
+                font-size: 24px;
+                width: fit-content;
+                margin: 0 auto;
+                padding: 1px 6px 1px 7px;
+                letter-spacing: 0.1em;
+                background-color: $beige-dark;
+                &:hover {
+                    background-color: $beige-dark-hover;
+                }
+            }
+        }
+        &__texts {
+            width: 515px;
+            position: relative;
+            @media only screen and (max-width: $md) {
+                margin: 0 auto 10px;
+            }
+            @media only screen and (max-width: $sm) {
+                width: 310px;
+            }
+            &__number {
+                display: block;
+                position: absolute;
+                left: calc(50% + 120px);
+                top: 48px;
+                color: $beige-dark;
+                font-size: 18px;
+                font-weight: 600;
+                font-family: 'ff-good-headline-web-pro-ext';
+                letter-spacing: 0.1em;
+            }
+            &__logo {
+                display: block;
+                width: 215px;
+                height: 49px;
+                margin: 54px auto 36px;
+                background-image: url(../assets/section5-logo.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                @media only screen and (max-width: $sm) {
+                    margin: 44px auto 26px;
+                }
+            }
+            &__text {
+                max-width: 360px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 14px;
+                line-height: 1.75em;
+                color: $grey-font;
+            }
+            &__contact-data {
+                display: flex;
+                flex-direction: row;
+                @media only screen and (max-width: $sm) {
+                    flex-direction: column;
+                }
+                &__item {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 44px;
+                    margin-right: 5px;
+                    width: calc(50% - 5px);
+                    text-align: center;
+                    @media only screen and (max-width: $sm) {
+                        margin: 30px auto 0;
+                        width: 100%;
+                    }
+                    &__name {
+                        margin-bottom: 8px;
+                        font-family: 'ff-good-headline-web-pro-ext';
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: $grey-dark;
+                        letter-spacing: 0.1em;
+                    }
+                    &__contact {
+                        margin-bottom: 2px;
+                        font-size: 14px;
+                        color: $grey-font;
+                        text-decoration: none;
+                        &:hover {
+                            color: $grey-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__img1 {
+        position: absolute;
+        bottom: -95px;
+        left: calc(50% - 405px);
+        width: 1089px;
+        height: 522px;
+        background-image: url(../assets/section5-img1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        @media only screen and (max-width: $md) {
+            left: auto;
+            right: -80px;
+            bottom: -115px;
+            width: 800px;
+        }
+        @media only screen and (max-width: $sm) {
+            right: -10px;
+            bottom: -10px;
+            width: 320px;
+            background-position: center bottom;
+        }
+    }
+    &__img2 {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 122px;
+        height: 247px;
+        background-image: url(../assets/section5-img2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        @media only screen and (min-width: $lg) {
+            animation: MoveLeftRightSec5 2.4s ease-in-out infinite;
+            @keyframes MoveLeftRightSec5 {
+                0%,
+                100% {
+                    right: 0;
+                }
+                50% {
+                    right: -8px;
+                }
+            }
+        }
+        @media only screen and (max-width: $md) {
+            display: none;
+        }
+    }
+    &__img3 {
+        position: absolute;
+        top: -99px;
+        right: calc(50% + 15px);
+        width: 579px;
+        height: 693px;
+        background-image: url(../assets/section5-img3.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: 0;
+        @media only screen and (min-width: $lg) {
+            animation: RotSec5 3.6s ease-in-out infinite;
+            @keyframes RotSec5 {
+                0%,
+                100% {
+                    transform: rotate(-4deg);
+                }
+                50% {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+        @media only screen and (max-width: $md) {
+            display: none;
+        }
+    }
+}

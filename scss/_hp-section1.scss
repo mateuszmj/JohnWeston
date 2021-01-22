@@ -1,0 +1,217 @@
+.section1 {
+    position: relative;
+    height: 980px;
+    @media only screen and (max-width: $md) {
+        height: 860px;
+    }
+    @media only screen and (max-width: $sm) {
+        height: 630px;
+    }
+    &__content {
+        position: absolute;
+        top: 146px;
+        left: calc(50% - 500px + 4px);
+        width: 1000px;
+        z-index: 3;
+        @media only screen and (max-width: $lg) {
+            left: calc(50% - 450px + 4px);
+            width: 900px;
+        }
+        @media only screen and (max-width: $md) {
+            left: calc(50% - 300px);
+            width: 600px;
+        }
+        @media only screen and (max-width: $sm) {
+            left: calc(50% - 160px);
+            width: 320px;
+            top: 80px;
+        }
+        h3 {
+            margin-right: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 24px;
+            letter-spacing: 0.16em;
+            font-family: 'ff-good-headline-web-pro-ext';
+            color: $grey-dark;
+            @media only screen and (max-width: $sm) {
+                margin-right: 0;
+            }
+        }
+        h1 {
+            margin: 30px 0 22px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 80px;
+            letter-spacing: 0.1em;
+            font-family: 'ff-good-headline-web-pro-ext';
+            color: $grey-dark;
+            @media only screen and (max-width: $md) {
+                font-size: 70px;
+            }
+        }
+        &__btn {
+            cursor: pointer;
+            display: block;
+            color: $white;
+            border: 2px solid $white;
+            width: 221px;
+            height: 40px;
+            font-family: 'ff-good-headline-web-pro-ext';
+            line-height: 34px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 24px;
+            letter-spacing: 0.1em;
+            margin: 0 auto;
+            transition: 0.25s ease-in-out;
+            &:hover {
+                color: $grey-dark;
+                border: 2px solid $grey-dark;
+            }
+        }
+        &__scroll {
+            display: block;
+            position: relative;
+            text-transform: uppercase;
+            margin: 214px auto 0;
+            width: fit-content;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: $grey-dark;
+            font-family: 'ff-good-headline-web-pro-ext';
+            letter-spacing: 0.1em;
+            @media only screen and (max-width: $md) {
+                margin-top: 194px;
+                left: -30px;
+            }
+            @media only screen and (max-width: $sm) {
+                margin-top: 80px;
+                left: -14px;
+            }
+        }
+        &__scroll-line {
+            display: block;
+            position: relative;
+            width: 2px;
+            height: 121px;
+            background-color: $grey-dark;
+            margin: 18px auto 0;
+            @media only screen and (max-width: $md) {
+                left: -30px;
+            }
+            @media only screen and (max-width: $sm) {
+                left: -14px;
+                height: 58px;
+                margin-top: 12px;
+            }
+        }
+    }
+    &__img1 {
+        position: absolute;
+        top: 205px;
+        left: calc(50% - 400px + 42px);
+        width: 800px;
+        height: 772px;
+        background-image: url(../assets/section1-img1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+        @media only screen and (max-width: $md) {
+            top: 175px;
+            left: calc(50% - 300px);
+            width: 600px;
+        }
+        @media only screen and (max-width: $sm) {
+            left: calc(50% - 160px);
+            width: 320px;
+            height: 300px;
+            top: 300px;
+        }
+    }
+    &__img2 {
+        position: absolute;
+        top: -112px;
+        left: calc(50% - 350px + 26px);
+        width: 700px;
+        height: 857px;
+        background-image: url(../assets/section1-img2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 2;
+        @media only screen and (min-width: $lg) {
+            animation: MoveUpDownSec1 6s ease-in-out infinite;
+            @keyframes MoveUpDownSec1 {
+                0%,
+                100% {
+                    top: -112px;
+                    transform: rotate(0deg);
+                }
+                50% {
+                    top: -124px;
+                    transform: rotate(2deg);
+                }
+            }
+        }
+        @media only screen and (max-width: $md) {
+            top: -165px;
+            left: calc(50% - 308px);
+            width: 600px;
+        }
+        @media only screen and (max-width: $sm) {
+            top: -115px;
+            left: calc(50% - 160px);
+            width: 320px;
+            background-position: top center;
+        }
+    }
+    &__img3 {
+        position: absolute;
+        top: 532px;
+        left: 0;
+        width: 246px;
+        height: 232px;
+        background-image: url(../assets/section1-img3.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: 0;
+        @media only screen and (min-width: $lg) {
+            animation: MoveLeftRightSec1 4.4s ease-in-out infinite;
+            @keyframes MoveLeftRightSec1 {
+                0%,
+                100% {
+                    left: 0;
+                }
+                50% {
+                    left: -12px;
+                }
+            }
+        }
+        @media only screen and (max-width: $md) {
+            display: none;
+        }
+    }
+    &__img4 {
+        position: absolute;
+        top: 235px;
+        left: calc(50% - 92px - 250px);
+        width: 184px;
+        height: 72px;
+        background-image: url(../assets/section1-img4.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: 4;
+        @media only screen and (max-width: $md) {
+            left: calc(50% - 92px - 210px);
+        }
+        @media only screen and (max-width: $sm) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+header {
+    position: relative;
+    height: 112px;
+    z-index: 9;
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 36px 50px 0;
+        max-width: 1400px;
+        margin: 0 auto;
+        height: 100%;
+        @media only screen and (max-width: $sm) {
+            padding: 36px 20px 0;
+        }
+        &__logo {
+            width: 123px;
+            height: 76px;
+            background-image: url(../assets/logo-white.png);
+        }
+        &__sm {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 48px;
+            height: 41px;
+            &__ig {
+                cursor: pointer;
+                display: block;
+                width: 17px;
+                height: 17px;
+                background-image: url(../assets/header-ig.png);
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+            &__fb {
+                cursor: pointer;
+                display: block;
+                width: 17px;
+                height: 17px;
+                background-image: url(../assets/header-fb.png);
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+        &__lang {
+            width: 36px;
+            height: 37px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin: 0 2px 0 62px;
+            @media only screen and (max-width: $sm) {
+                margin: 2px 0 0;
+            }
+            &__btn {
+                cursor: pointer;
+                display: block;
+                font-family: 'ff-good-headline-web-pro-ext';
+                font-size: 18px;
+                font-weight: 600;
+                color: $grey-dark;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}

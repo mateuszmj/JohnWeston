@@ -1,0 +1,58 @@
+@import 'normalize';
+@import 'variables';
+@import 'header';
+@import 'nav';
+@import 'hp-section1';
+@import 'hp-section2';
+@import 'hp-section5';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: $bg-blue;
+    background-image: url(../assets/page-bg.jpg),
+        linear-gradient(
+            90deg,
+            rgba($bg-blue, 1) 0%,
+            rgba($bg-blue, 1) 35%,
+            rgba($bg-beige, 1) 65%,
+            rgba($bg-beige, 1) 100%
+        );
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'sofia-pro', sans-serif;
+    font-size: 18px;
+    color: $black;
+    @media only screen and (max-width: 980px) {
+        background-image: linear-gradient(
+            87deg,
+            rgba(202, 242, 241, 1) 0%,
+            rgba(202, 242, 241, 1) 50%,
+            rgba(237, 224, 201, 1) 90%,
+            rgba(237, 224, 201, 1) 100%
+        );
+    }
+}
+header,
+nav,
+main,
+footer {
+    animation: fadein 1.5s;
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

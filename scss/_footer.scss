@@ -1,0 +1,145 @@
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    min-height: 95px;
+    padding-top: 16px;
+    z-index: 0;
+    background-color: $white;
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        height: 100%;
+        @media only screen and (max-width: $md) {
+            flex-direction: column;
+            padding: 14px 0 30px;
+        }
+    }
+    .footer-left {
+        display: flex;
+        align-items: center;
+        &__logo {
+            display: block;
+            width: 87px;
+            height: 54px;
+            margin: 0 60px 0 30px;
+            background-image: url(../assets/footer-logo1.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        &__ig {
+            display: block;
+            width: 22px;
+            height: 22px;
+            margin-top: 2px;
+            margin-right: 15px;
+            background-image: url(../assets/footer-ig.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        &__fb {
+            display: block;
+            width: 22px;
+            height: 22px;
+            margin-top: 2px;
+            margin-right: 15px;
+            background-image: url(../assets/footer-fb.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    .footer-menu {
+        display: flex;
+        align-items: center;
+        margin-top: 6px;
+        margin-left: 6px;
+        @media only screen and (max-width: $md) {
+            margin: 10px 0 0;
+        }
+        @media only screen and (max-width: $sm) {
+            flex-direction: column;
+            margin: 20px 0 0;
+        }
+        &__item {
+            display: block;
+            color: $black;
+            text-transform: uppercase;
+            font-family: 'ff-good-headline-web-pro-ext';
+            font-weight: 600;
+            font-size: 16px;
+            padding: 20px 49px 20px 13px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            @media only screen and (max-width: $lg) {
+                padding: 20px 20px 20px 13px;
+            }
+            @media only screen and (max-width: $md) {
+                padding: 20px;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    .footer-right__logo {
+        display: block;
+        width: 149px;
+        height: 34px;
+        margin: 4px 40px 0 15px;
+        background-image: url(../assets/footer-logo2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        @media only screen and (max-width: $md) {
+            margin: 20px 0 0;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    .footer__img1 {
+        position: absolute;
+        top: -61px;
+        left: calc(50% + 282px);
+        width: 101px;
+        height: 87px;
+        background-image: url(../assets/footer-img1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+        @media only screen and (min-width: $lg) {
+            animation: MoveUpDownFooter 1.8s ease-in-out infinite;
+            @keyframes MoveUpDownFooter {
+                0%,
+                100% {
+                    top: -61px;
+                }
+                50% {
+                    top: -51px;
+                }
+            }
+        }
+        @media only screen and (max-width: $md) {
+            left: auto;
+            top: -56px;
+            right: 100px;
+        }
+        @media only screen and (max-width: $sm) {
+            width: 62px;
+            top: -46px;
+            right: 110px;
+        }
+    }
+}
